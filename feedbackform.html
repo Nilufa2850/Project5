@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div id="container-div">
+
+        <div class="container-item-div" id="div1">
+            <h1 id="heading1">Feedback Form</h1>
+            <p id="p1">We would love to hear your thoughts, suggestions, concerns or problems with anything so we can improve!</p>
+        </div>
+
+        <div class="container-item-div" id="div2">
+
+            <div id="div2-1">
+                <label for="dropdown1"  id="label1" >Course Name:</label>
+                <select name="Course" id="dropdown1">
+                    <option value="" selected>C++</option>
+                    <option value="">Java</option>
+                    <option value="">Python</option>
+                    <option value="">C</option>
+                    <option value="">PHP</option>
+                </select>
+
+                <label for="dropdown2"  id="label2" >Instructor Name:</label>
+                <select name="Instructor" id="dropdown2">
+                    <option value="">Nilufa Yasmin</option>
+                    <option value="" selected>Sourabh Shukla</option>
+                    <option value="">Golam Mustafa</option>
+                    <option value="">Saharabanu Begom</option>
+                    <option value="">Sarwar Ahmmed</option>
+                </select>
+            </div>
+            <div id="div2-2">
+                <strong>Feedback Type</strong>
+                <input type="radio" name="radio-select" id="r1">
+                <label for="r1">Comments</label>
+                <input type="radio" name="radio-select" id="r2">
+                <label for="r2">Suggestions</label>
+                <input type="radio" name="radio-select" id="r3">
+                <label for="r3">Questions</label>
+            </div>
+
+        </div>
+
+        <div class="container-item-div" id="div3">
+            <strong>Describe Your Feedback:</strong>
+            <textarea placeholder="Type something..." name="TextArear" id="text-box" name="FeedbackBox" required ></textarea>
+        </div>
+
+        <div class="container-item-div" id="div4">
+            <strong>Name</strong>
+            <div>
+                <input type="text" id="name1" name="firstName" placeholder="First Name" required>
+                <input type="text" id="name2" name="lastName" placeholder="Last Name">
+            </div>
+        </div>
+
+        <div class="container-item-div" id="div5">
+
+            <strong>E-mail</strong>
+            <input type="email" name="Email" id="email" placeholder="Ex: example@example.com">
+
+            <strong>Ratings: </strong>
+
+            <div id="rating-radio">
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5" title="5 stars">★</label>
+                
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4" title="4 stars">★</label>
+                
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3" title="3 stars">★</label>
+                
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2" title="2 stars">★</label>
+                
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1" title="1 star">★</label>
+                
+            </div>
+        </div>
+        
+        <div id="div6">
+            <input type="submit" name="submit-button" id="sub">
+        </div>
+    </div>
+    
+</body>
+</html>
